@@ -20,6 +20,7 @@ class MainActivity : AppCompatActivity() {
         val numberAdapter = FibonacciAdapter(numbers)
         binding.rvNumbers.adapter = numberAdapter
     }
+
     fun fibonacci(n: Int): List<Int> {
         val numbers = mutableListOf(0, 1)
         while (numbers.size < n) {
